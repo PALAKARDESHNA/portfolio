@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>palak's portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header design -->
+
+    <header class="header sticky">
+      <a href="#" class="logo"
+        >palak<span class="animate" style="--i: 1"></span
+      ></a>
+
+      <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div> 
+      <nav class="navbar">
+        <ul class="sidebar">
+            <li><a href="#" class="close-menu" onclick=hideSidebar()><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></a></li>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">contacts</a></li>
+        </ul>
+
+        <div class="menu-div" onclick=showSidebar()>
+          <a href="#" class="menu" onclick=showSidebar()
+            >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="currentColor"
+                d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"
+              /></svg></a>
+        </div>
+        <span class="active-nav"></span>
+        <span class="animate" style="--i: 2"></span>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home show-animate" id="home">
+      <div class="home-content">
+        <h1>
+          Hello,i'm<span> PALAK ARDESHNA</span
+          ><span class="animate" style="--i: 2"></span>
+        </h1>
+        <div class="text-animation">
+          <h3>Full-Stack Developer</h3>
+          <span class="animate" style="--i: 3"></span>
+        </div>
+        <p>
+          I am a versatile full-stack developer skilled in HTML, CSS, JavaScript, and the MERN stack. With a foundation in UI/UX design and a passion for learning, I bring creativity and unique perspectives to my projects. As a businesswoman active in social activities, I deliver captivating user interfaces and high-quality work. My strong problem-solving abilities and collaborative nature make me an asset in any team setting.
+          <span class="animate" style="--i: 4"></span>
+        </p>
+
+        <div class="btn-box">
+          <a href="#" class="btn">hire me</a>
+          <a href="#" class="btn">let's talk</a>
+          <span class="animate" style="--i: 5"></span>
+        </div>
+      </div>
+
+      <div class="home-sci">
+        <a href="https://www.instagram.com/starry__hues_/"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="https://x.com/ardeshna_palak"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/palak-ardeshna-a6918222b/"><i class="bx bxl-linkedin"></i></a>
+        <span class="animate" style="--i: 6"></span>
+      </div>
+      <div class="home-imgHover">
+        <img src="/IMG_6472.PNG" alt="palak" />
+      </div>
+      <span class="animate home-img" style="--i: 7"></span>
+    </section>
+    
+
+    <!-- about section design -->
+
+    <section class="about" id="about">
+      <h2 class="heading">
+          About<span>Me</span><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+      <div class="about-img">
+          <img src="/about.jpg" alt="" />
+          <span class="circle-spin"></span>
+          <span class="animate scroll" style="--i: 2"></span>
+      </div>
+      <div class="about-content">
+        <h3>
+          Full-stack Developer!<span class="animate scroll" style="--i: 3"></span>
+        </h3>
+          <p id="aboutText"> 
+            <span class="animate scroll" style="--i:4"></span>
+            Hello! I’m Palak Ardeshna, a full-stack developer with diverse experience and a passion for creating engaging digital experiences.
+            <br><br>
+              <div class="btn-box btns">
+              <a href="#" id="readMoreBtn" class="btn">Read More</a>
+              <span class="animate" style="--i: 5"></span>
+              </div>
+
+          </p>
+      </div>
+  </section>
+  
+
+    <!-- education section design -->
+    <section class="education" id="education">
+      <h2 class="heading">
+        My <span>journey</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <div class="education-row">
+        <div class="education-column">
+          <h3 class="title">
+            Education<span class="animate scroll" style="--i: 2"></span>
+          </h3>
+          <div class="Education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                <i class="bx bxs-calendar"></i>2019-2021 : higher-secondary<span
+                    class="animate scroll"
+                    style="--i: 3"
+                  ></span>
+                </div>
+                <h3 > javiya schooling system (junagadh,gujrat.)
+                  <span
+                    class="animate scroll"
+                    style="--i: 4"
+                  ></span>
+                </h3>
+                <p>pr : 98.97<br>percentages : 90.00%</p>
+                  <span
+                    class="animate scroll"
+                    style="--i: 5"
+                  ></span>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>2021-present : Bachelor's in Information Technology<span
+                    class="animate scroll"
+                    style="--i: 6"
+                  ></span>
+                </div>
+                <h3>
+                 Ganpat university(kherva,mehsana)<span
+                    class="animate scroll"
+                    style="--i: 7"
+                  ></span>
+                </h3>
+                <p>
+                  cgpa : 7.57(till 6th sem)
+                  <span
+                    class="animate scroll"
+                    style="--i: 8"
+                  ></span>
+                </p>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 9"></span>
+          </div>
+        </div>
+     <!-- projects -->
+     <div class="education-row">
+      <div class="education-column">
+        <h3 class="title">
+          projects<span class="animate scroll" style="--i: 2"></span>
+        </h3>
+        <div class="Education-box">
+          <div class="education-content">
+            <div class="content">
+              <div class="year">
+                <span
+                  class="animate scroll"
+                  style="--i: 3"
+                ></span>
+              </div>
+              <h3 > minimal petsite :
+                <span
+                  class="animate scroll"
+                  style="--i: 4"
+                ></span>
+              </h3>
+              <p> <a href="https://palakardeshna.github.io/web-dev-task.1/"> click me!</a></p>
+                <span
+                  class="animate scroll"
+                  style="--i: 5"
+                ></span>
+            </div>
+          </div>
+          <div class="education-content">
+            <div class="content">
+            
+              <h3>
+               personal  portfolio(figma base)<span
+                  class="animate scroll"
+                  style="--i: 7"
+                ></span>
+              </h3>
+              <p>
+               <a href=" https://www.figma.com/proto/RKUsByG9gw5yF5pQ9pSYMl/palak's-portfolio?page-id=0%3A1&node-id=1-927&starting-point-node-id=1%3A927&t=NFBquPbD3pKyROpw-1">click me!</a>
+                <span
+                  class="animate scroll"
+                  style="--i: 8"
+                ></span>
+              </p>
+            </div>
+          </div>
+          <div class="education-content">
+            <div class="content">
+            
+              <h3>
+               gujrati Thali:<span
+                  class="animate scroll"
+                  style="--i: 7"
+                ></span>
+              </h3>
+              <p>
+               <a href="https://www.figma.com/proto/ztYQoTF3I2w3w6xvYg4R87/Untitled?page-id=0%3A1&node-id=5-103&viewport=760%2C318%2C0.07&t=L3LsziOh3iGrkfRc-1&scaling=min-zoom&content-scaling=fixed">click me!</a>
+                <span
+                  class="animate scroll"
+                  style="--i: 8"
+                ></span>
+              </p>
+            </div>
+          </div>
+          <span class="animate scroll" style="--i: 9"></span>
+        </div>
+      </div>
+        <!-- first internship -->
+
+   <div class="education-column">
+  <h3 class="title">
+    Internships<span class="animate scroll" style="--i: 1"></span>
+  </h3>
+  <div class="Education-box">
+   
+     <!-- i1 -->
+     <div class="education-content">
+      <div class="content">
+        <div class="year">
+        <h3> INTERN - junior python developer:&nbsp;ZETRIX WEB&nbsp;(<a href="https://drive.google.com/file/d/1ViHE3SjxyFEXVvOVVazPjdGH3qjC7K-v/view?usp=sharing">certififcate</a>)</h3>
+        <i class="bx bxs-calendar"></i>dec-2023 to jan-2024 : rajkot,gujrat<span
+            class="animate scroll"
+            style="--i: 6"
+          ></span></div><p>
+            Uptechmind: Rajkot's leading startup for innovative web and app development.
+            <span
+              class="animate scroll"
+              style="--i: 7"
+            ></span>
+          </p>
+      </div>
+      <span class="animate scroll" style="--i: 8"></span>
+    </div>
+    <!-- i2 -->
+    <div class="education-content">
+      <div class="content">
+        <div class="year">
+        <h3> INTERN - UIUX:&nbsp;UpTech Mind&nbsp;(<a href="https://drive.google.com/file/d/18JT0pDGtPT9pa1rEsMByql2ssoqjcPhp/view?usp=sharing">certififcate</a>)</h3>
+        <i class="bx bxs-calendar"></i>jan-2024 to feb-2024 : rajkot,gujrat<span
+            class="animate scroll"
+            style="--i: 6"
+          ></span></div><p>
+            Uptechmind: Rajkot's leading startup for innovative web and app development.
+            <span
+              class="animate scroll"
+              style="--i: 7"
+            ></span>
+          </p>
+      </div>
+      <span class="animate scroll" style="--i: 8"></span>
+    </div>
+        <div class="education-column">
+          <h3 class="title">
+            work Experience<span class="animate scroll" style="--i: 1"></span>
+          </h3>
+          <div class="Education-box">
+            <div class="education-content">
+              <div class="content">
+                <h3>Coordinator : &nbsp;Android Workshop</h3><p>
+                    In this program I worked as a coordinator and junior guide.
+                    <span
+                      class="animate scroll"
+                      style="--i: 7"
+                    ></span>
+                  </p>
+              </div>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <h3>ENLISTEE :&nbsp;national service scheme  </h3><p>
+                  I volunteer to help the community, raise awareness, and serve as a public speaker.
+                    <span
+                      class="animate scroll"
+                      style="--i: 7"
+                    ></span>
+                  </p>
+              </div>
+              <span class="animate scroll" style="--i: 8"></span>
+            </div>
+            <div class="education-content">
+              <div class="content">
+                <h3> Winner, State-Level Essay Writing Competition, Gujarat.</h3><p>
+                    I won 1st prize and a Rs. 21,000 cash award from the education minister in a state-level competition among 39 universities.
+                    <span
+                      class="animate scroll"
+                      style="--i: 7"
+                    ></span>
+                  </p>
+              </div>
+              <span class="animate scroll" style="--i: 8"></span>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+      <h3 class="heading">
+        my<span>skills</span><span class="animate scroll" style="--i: 1"></span>
+      </h3>
+      <div class="skills-row">
+        <div class="skills-column">
+          <h3 class="title">
+            coding skills<span class="animate scroll" style="--i: 2"></span>
+          </h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>HTML<span>90%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>css<span>80%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>javascript<span>65%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>python<span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Data science<span>50%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
+        </div>
+        <div class="skills-column">
+          <h3 class="title">
+            professional skills<span
+              class="animate scroll"
+              style="--i: 4"
+            ></span>
+          </h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>web design<span>95%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>web development<span>67%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>graphic design<span>85%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>seo marketing<span>60%</span></h3>
+                <div class="bar"><span></span></div>
+              </div>
+            </div>
+            <span class="animate scroll" style="--i: 5"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">
+        contact<span>Me!</span
+        ><span class="animate scroll" style="--i: 1"></span>
+      </h2>
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full name" required />
+            <span class="focus"></span>
+            <span class="animate scroll" style="--i: 2"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email Address" required />
+            <span class="focus"></span>
+            <span class="animate scroll" style="--i: 3"></span>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field">
+            <input type="number" placeholder="mobile number" required />
+            <span class="focus"></span>
+            <span class="animate scroll" style="--i: 4"></span>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Email subject" required />
+            <span class="focus"></span>
+            <span class="animate scroll" style="--i: 5"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <span class="focus"></span>
+          <span class="animate scroll" style="--i: 6"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Submit</button>
+          <span class="animate scroll" style="--i: 7"></span>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by palak |all rights reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
