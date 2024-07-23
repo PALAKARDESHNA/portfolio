@@ -348,8 +348,6 @@ span{
     font-size: 1.6rem;
     margin:2rem 0 3rem;
 }
-
-
 .btn-box.btns{
     display: inline-block;
     width: 15rem;
@@ -365,11 +363,20 @@ span{
     flex-direction: column;
     min-height: auto;
     padding-bottom: 5rem;
+    gap: 2rem;
+
 }
 
+/* .education-box {
+    display: grid;
+    flex-direction: column;
+    gap: 2rem;
+    color: #00abf0;
+} */
+
 .education .education-row{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:auto;
     gap: 5rem ;
 }
 .education-row .education-column{
@@ -382,10 +389,10 @@ span{
     margin: 0 0 1.5rem 2rem;
 }
 
-.education-column .education-box{
+/* .education-column .education-box{
     position: relative;
-    border-left:2rem solid var(--main-color);
-}
+    
+} */
 .education-box .education-content{
     position: relative;
     padding-left: 2rem;
@@ -396,8 +403,8 @@ span{
     top: 0;
     left: -1.1rem;
     width: 2rem;
-    height: 2rem;
-    background: var(--main-color);
+    height: 1rem;
+    background: var(--second-bg-color);
     border-radius: 50%; ;
 }
 .education-content .content{
@@ -406,6 +413,7 @@ span{
     border:.2rem solid var(--main-color) ;
     border-radius: .6rem;
     margin-bottom:  2rem; 
+    gap: 2rem;
 }
 
 
@@ -438,6 +446,7 @@ span{
     font-size: 1.6rem;
 }
 .education-content .content p{
+    color: var(--text-color);
     font-size: 1.6rem;
     padding-top: .5rem;
 }
@@ -459,7 +468,8 @@ span{
 .skills .skills-row{
     display: flex;
     flex-wrap: wrap;
-    gap:5rem;
+    justify-content: space-between;
+    gap:2rem;
 }
 
 .skills-row .skills-column{
@@ -524,10 +534,11 @@ span{
     margin: 1rem 0;
 }
 .skills-content .progress .bar span{
-    display: block;
-    height:100%;
+    display: flex;
+    height: 9px;;
     border-radius: .3rem;
     background: var(--main-color);
+
 
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
@@ -540,11 +551,44 @@ span{
     width: 65%;
 }
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
-    width: 60%;
+    width: 65%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 50%;
+}
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 65%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
     width: 95%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 65%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 60%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
+    width: 60%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(1) .bar span{
+    width: 70%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(2) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(3) .bar span{
+    width: 65%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(4) .bar span{
+    width: 85%;
+}
+.skills-column:nth-child(3) .skills-content .progress:nth-child(5) .bar span{
+    width: 70%;
 }
 
 .contact{
@@ -957,8 +1001,57 @@ section{
     opacity: 1;
     transform: translateY(0);
   }
-  
+/*   
   [data-animate] {
     animation-delay: calc(var(--i) * 0.3s);
+  } */
+
+  .education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   
+  .education-column {
+    background: var(--second-bg-color);
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-box {
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+    color: #00abf0;
+  }
+  
+  .education-content {
+    background: var(--second-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .year {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .education-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .education-column:nth-child(1),
+    .education-column:nth-child(2) {
+      grid-column: span 1;
+    }
+  
+    .education-column:nth-child(3),
+    .education-column:nth-child(4) {
+      grid-column:span 1;
+    }
+}
