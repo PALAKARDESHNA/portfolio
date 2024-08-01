@@ -120,4 +120,59 @@ window.addEventListener('scroll', function() {
       }
     });
   });
-  
+
+
+const sendHireMeEmail = () =>{
+    window.location.href = 'mailto:portfolio.palak@gmail.com?subject=Job%20Opportunity&body=I%20am%20interested%20in%20hiring%20you.'
+}
+
+// Select form and form fields
+const form = document.querySelector("form");
+const user_name = document.getElementById("user-name");
+const email = document.getElementById("useremail");
+const phone = document.getElementById("phone");
+const subject = document.getElementById("emailsub");
+const mess = document.getElementById("desc");
+
+// Function to handle form submission and send email
+const contactMe = () => {
+    const bodyMessage = `fullname: ${user_name.value}<br>email: ${email.value}<br>phone: ${phone.value}<br>message: ${mess.value}`;
+    
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "portfolio.palak@gmail.com",
+        Password: "B6D290C2CC6E741D91963CB31C153EE3E1F5", // Consider using environment variables or other secure methods for sensitive information
+        To: 'portfolio.palak@gmail.com',
+        From: 'portfolio.palak@gmail.com',
+        Subject: subject.value,
+        Body: bodyMessage
+    }).then(
+        message => {
+            if (message === "OK") {
+                Swal.fire({
+                    title: "Success!",
+                    text: "Message sent successfully!",
+                    icon: "success"
+                });
+            } else {
+                Swal.fire({
+                    title: "Error!",
+                    text: "Message sending failed!",
+                    icon: "error"
+                });
+            }
+        }
+    ).catch(error => {
+        Swal.fire({
+            title: "Error!",
+            text: "Something went wrong!",
+            icon: "error"
+        });
+    });
+}
+
+// Attach event listener to the form
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    contactMe();
+});

@@ -286,6 +286,7 @@ width: 100%;
     background: var(--bg-color);
     opacity: .8;
 }
+
 .about{
 display: flex;
 justify-content:center;
@@ -595,6 +596,7 @@ span{
     min-height: auto;
     padding-bottom: 7rem ;
 }
+
 .contact form{
     max-width: 70rem;
     margin: 0 auto;
